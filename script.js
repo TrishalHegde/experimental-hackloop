@@ -35,3 +35,6 @@ const body = document.body;
     document.getElementById("startButton").addEventListener("click",function(){
         document.getElementById("nextPage").scrollIntoView({behavior:"smooth"});
     });
+    document.getElementById("YouTube").addEventListener("click",function(){
+        window.location.href="index.html";
+    });
