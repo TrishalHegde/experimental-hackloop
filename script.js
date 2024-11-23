@@ -36,6 +36,10 @@ const body = document.body;
         document.getElementById("nextPage").scrollIntoView({behavior:"smooth"});
     });
     document.getElementById("YouTube").addEventListener("click",function(){
-        window.location.href="index.html";
+        window.location.href="index1.html";
     });
+    document.getElementById("AI").addEventListener("click",function(){
+        window.location.href="index2.html";
+    });
+
    
