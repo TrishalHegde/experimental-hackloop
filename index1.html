@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark and Bright Modes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background">
+        <video autoplay loop muted plays-inline class="video">
+            <source src="7101912-uhd_2560_1440_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <div class="content">
+            <h1 class="heading">WELCOME TO MATH MARVEL!</h1>
+            <h1 class="heading">Clear your math doubts here</h1>
+            <button class="toggle" id="startButton">START</button>
+        </div>
+        <!-- Toggle Button -->
+        <button class="toggle-btn" id="modeToggle">Switch to Bright Mode</button>
+    </div>
+    <div class="container" id="nextPage">
+        <video autoplay loop muted plays-inline class="video">
+            <source src="7101912-uhd_2560_1440_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <h1>Engage with Math</h1>
+        <p>Explore, learn, and chat with AI</p>
+        <div class="cards scroll-animate">
+            <div class="card">
+                <img src="images.jpg" alt="Pencils">
+                <h3>Engaging YouTube content</h3>
+                <p>Explore captivating math concepts through dynamic videos.</p>
+            </div>
+            <div class="card">
+                <img src="download.jpg" alt="Code">
+                <h3>Interactive chatbot</h3>
+                <p>Get instant math assistance with our AI-powered chatbot.</p>
+            </div>
+            <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Overlay Example</title>
+    <style>
+        /* Container styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .background {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Full screen height */
+           background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Semi-transparent overlay */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+        }
+
+        /* Text content styling */
+        .content {
+            position: relative;
+            color: white;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+        .video{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index:-1;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <video autoplay loop muted plays-inline class="video">
+            <source src="7101912-uhd_2560_1440_25fps.mp4" type="video/mp4">
+        </video>
+        <!-- Overlay -->
+        <div class="overlay"></div>
+        <!-- Content -->
+        <div class="content">
+            <h1>Welcome to My Website</h1>
+            <p>Your text here!</p>
+        </div>
+    </div>
+</body>
+</html>
